@@ -1,0 +1,9 @@
+{
+  "accentColor": "#ffc800",
+  "cssTheme": "",
+  "baseFontSize": 18,
+  "theme": "obsidian",
+  "baseFontSizeAction": true,
+  "nativeMenus": false,
+  "textFontFamily": "JetBrains Mono"
+}

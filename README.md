@@ -1,140 +1,141 @@
 *[English](README.md) ∙ [日本語](README-ja.md) ∙ [简体中文](README-zh-Hans.md) ∙ [繁體中文](README-zh-TW.md) | [العَرَبِيَّة‎](https://github.com/donnemartin/system-design-primer/issues/170) ∙ [বাংলা](https://github.com/donnemartin/system-design-primer/issues/220) ∙ [Português do Brasil](https://github.com/donnemartin/system-design-primer/issues/40) ∙ [Deutsch](https://github.com/donnemartin/system-design-primer/issues/186) ∙ [ελληνικά](https://github.com/donnemartin/system-design-primer/issues/130) ∙ [עברית](https://github.com/donnemartin/system-design-primer/issues/272) ∙ [Italiano](https://github.com/donnemartin/system-design-primer/issues/104) ∙ [한국어](https://github.com/donnemartin/system-design-primer/issues/102) ∙ [فارسی](https://github.com/donnemartin/system-design-primer/issues/110) ∙ [Polski](https://github.com/donnemartin/system-design-primer/issues/68) ∙ [русский язык](https://github.com/donnemartin/system-design-primer/issues/87) ∙ [Español](https://github.com/donnemartin/system-design-primer/issues/136) ∙ [ภาษาไทย](https://github.com/donnemartin/system-design-primer/issues/187) ∙ [Türkçe](https://github.com/donnemartin/system-design-primer/issues/39) ∙ [tiếng Việt](https://github.com/donnemartin/system-design-primer/issues/127) ∙ [Français](https://github.com/donnemartin/system-design-primer/issues/250) | [Add Translation](https://github.com/donnemartin/system-design-primer/issues/28)*
 
-**Help [translate](TRANSLATIONS.md) this guide!**
+**Bu qo'llanmani [tarjima](TRANSLATIONS.md) qilishda yordam bering!**
 
-# The System Design Primer
+# Tizimni Loyihalash Haqida Boshlang'ich Qo'llanma
 
 <p align="center">
   <img src="images/jj3A5N8.png">
   <br/>
 </p>
 
-## Motivation
+## Motivatsiya
 
-> Learn how to design large-scale systems.
+> Keng masshtabli tizimlarni loyihalashni o'rganing.
 >
-> Prep for the system design interview.
+> Tizimni loyihalash intervyulariga tayyorlaning.
 
-### Learn how to design large-scale systems
+### Keng masshtabli tizimlarni loyihalashni o'rganing
 
-Learning how to design scalable systems will help you become a better engineer.
+Masshtabini o'zgartirib bo'ladigan(yoki masshtablab bo'ladigan) tizimlarni loyihalashni o'rganish sizga yaxshi muhandis bo'lishda yordam beradi.
 
-System design is a broad topic.  There is a **vast amount of resources scattered throughout the web** on system design principles.
+Tizimni loyihalash bu keng tushuncha.  Internetda tizimni loyihalash tamoyillari haqida juda ham katta miqdorda resurslar mavjud.
 
-This repo is an **organized collection** of resources to help you learn how to build systems at scale.
+Bu repozitoriya, sizga tizimni keng masshtabda loyihalashni o'rganishda yordam beradigan resurslarning **tartiblangan kolleksiyasidir**.
 
-### Learn from the open source community
+### Ochiq manbali hamjamiyatdan o'rganing
 
-This is a continually updated, open source project.
+Bu davomli yangilanib boradigan ochiq manbali loyihadir.
 
-[Contributions](#contributing) are welcome!
+Sizning  [hissangizni](#contributing) mamnuniyat bilan qabul qilamiz!
 
-### Prep for the system design interview
+### Tizimni loyihalash intervyusiga tayyorlaning
 
-In addition to coding interviews, system design is a **required component** of the **technical interview process** at many tech companies.
+Kod yozish intervyusi bilan birgalikda, tizimni loyihalash ko'plab kompaniyalarning **texnik intervyu jarayoning** zarur tarkibiy qismi hisoblanadi. 
 
-**Practice common system design interview questions** and **compare** your results with **sample solutions**: discussions, code, and diagrams.
+**Tizimni loyihalash intervyusidagi eng ko'p uchraydigan umumiy savollar** ustida ishlang va o'z natijalaringizni **misol tariqasida berilgan javoblar** bilan **solishtiring**: muhokamalar, kod, va diagrammalar.
 
-Additional topics for interview prep:
+Intervyuga tayyorlanishga qo'shimcha mavzular:
 
-* [Study guide](#study-guide)
-* [How to approach a system design interview question](#how-to-approach-a-system-design-interview-question)
-* [System design interview questions, **with solutions**](#system-design-interview-questions-with-solutions)
-* [Object-oriented design interview questions, **with solutions**](#object-oriented-design-interview-questions-with-solutions)
-* [Additional system design interview questions](#additional-system-design-interview-questions)
+* [O'quv qo'llanmasi](#o'quv qo'llanmasi)
+* [Tizimni loyihalash intervyusi savoliga qanday yondashish kerak?](#how-to-approach-a-system-design-interview-question)
+* [Tizimni loyihalash intervyusi savollari, **javoblari bilan**](#system-design-interview-questions-with-solutions)
+* [Obyektga yo'naltirilgan usulda loyihalash intervyusi savollari, **javoblari bilan**](#object-oriented-design-interview-questions-with-solutions)
+* [Tizimni loyihalash intervyusi qo'shimcha savollari](#additional-system-design-interview-questions)
 
-## Anki flashcards
+## Anki kartochkalari
 
 <p align="center">
   <img src="images/zdCAkB3.png">
   <br/>
 </p>
 
-The provided [Anki flashcard decks](https://apps.ankiweb.net/) use spaced repetition to help you retain key system design concepts.
+Taqdim etilgan [Anki kartochkalari](https://apps.ankiweb.net/) ma'lum bir oraliqli takrorlashlar orqali sizga tizimni loyihalashdagi asosiy tushunchalarni eslab qolishda yordam beradi.
 
-* [System design deck](https://github.com/donnemartin/system-design-primer/tree/master/resources/flash_cards/System%20Design.apkg)
-* [System design exercises deck](https://github.com/donnemartin/system-design-primer/tree/master/resources/flash_cards/System%20Design%20Exercises.apkg)
-* [Object oriented design exercises deck](https://github.com/donnemartin/system-design-primer/tree/master/resources/flash_cards/OO%20Design.apkg)
+* [Tizimni loyihalash borasida kartochka](https://github.com/donnemartin/system-design-primer/tree/master/resources/flash_cards/System%20Design.apkg)
+* [Tizimni loyihalash borasidagi mashqlar kartochkasi](https://github.com/donnemartin/system-design-primer/tree/master/resources/flash_cards/System%20Design%20Exercises.apkg)
+* [Obyektga yo'naltirilgan loyihalash borasidagi mashqlar kartochkasi](https://github.com/donnemartin/system-design-primer/tree/master/resources/flash_cards/OO%20Design.apkg)
 
-Great for use while on-the-go.
+Yo'lda foydalanish uchun juda qulay!
 
-### Coding Resource: Interactive Coding Challenges
+### Dasturlash bo'yicha manba: Dasturlash borasida interaktiv masalalar
 
-Looking for resources to help you prep for the [**Coding Interview**](https://github.com/donnemartin/interactive-coding-challenges)?
+[**Kodlash intervyusiga**](https://github.com/donnemartin/interactive-coding-challenges) tayyorlanish uchun manba qidiryapsizmi?
 
 <p align="center">
   <img src="images/b4YtAEN.png">
   <br/>
 </p>
 
-Check out the sister repo [**Interactive Coding Challenges**](https://github.com/donnemartin/interactive-coding-challenges), which contains an additional Anki deck:
+U holda [**Dasturlash borasida Interaktiv Masalalar**](https://github.com/donnemartin/interactive-coding-challenges) repozitoriyasini qarab ko'ring. Bu repozitoriya masalalar bilan birga, qo'shimcha sifatida, Anki kartochkalarini ham o'z ichiga olgan:
 
-* [Coding deck](https://github.com/donnemartin/interactive-coding-challenges/tree/master/anki_cards/Coding.apkg)
+* [Dasturlash kartochkasi](https://github.com/donnemartin/interactive-coding-challenges/tree/master/anki_cards/Coding.apkg)
 
-## Contributing
+## Hissa qo'shish
 
-> Learn from the community.
+> Hamjamiyatdan o'rganing
 
-Feel free to submit pull requests to help:
+Quyidagi masalalarda yordamlashishda o'zingizni erkin his qiling:
 
-* Fix errors
-* Improve sections
-* Add new sections
-* [Translate](https://github.com/donnemartin/system-design-primer/issues/28)
+* Xatolarni tuzatish
+* Bo'limlarni yaxshilash
+* Yangi bo'limlarni qo'shish
+* [Tarjima qilish](https://github.com/donnemartin/system-design-primer/issues/28)
 
-Content that needs some polishing is placed [under development](#under-development).
+Yaxshilanishi kerak bo'lgan kontent ["Ishlab chiqarish jaroyonida"](#under-development) bo'limiga joylanadi.
 
-Review the [Contributing Guidelines](CONTRIBUTING.md).
+[Hissa qo'shish borasidagi yo'l-yo'riqlar](CONTRIBUTING.md) bilan tanishib chiqing.
 
-## Index of system design topics
+## Tizimni loyihalash mavzulari mundarijasi
 
-> Summaries of various system design topics, including pros and cons.  **Everything is a trade-off**.
+> Turli xil tizimni loyihalash mavzularining, har birining yaxshi va yomon tomonlarini o'z ichiga olgan xulosalar
+> **Everything is a trade-off**.
 >
-> Each section contains links to more in-depth resources.
+> Har bir bo'limda chuqur ma'lumot berilgan manbalarga havolalar mavjud.
 
 <p align="center">
   <img src="images/jrUBAF7.png">
   <br/>
 </p>
 
-* [System design topics: start here](#system-design-topics-start-here)
-    * [Step 1: Review the scalability video lecture](#step-1-review-the-scalability-video-lecture)
-    * [Step 2: Review the scalability article](#step-2-review-the-scalability-article)
-    * [Next steps](#next-steps)
-* [Performance vs scalability](#performance-vs-scalability)
+* [Tizimni loyihalash mavzulari: bu yerdan boshlanadi](#system-design-topics-start-here)
+    * [Step 1: Masshtablab bo'ladiganlik haqida video leksiyani ko'ring](#step-1-review-the-scalability-video-lecture)
+    * [Step 2: Masshtablab bo'ladiganlik haqida maqola o'qing](#step-2-review-the-scalability-article)
+    * [Keyingi qadamlar](#next-steps)
+* [Ijro(Performance) Masshtablab bo'lish(scalability) bilan solishtirganda](#performance-vs-scalability)
 * [Latency vs throughput](#latency-vs-throughput)
-* [Availability vs consistency](#availability-vs-consistency)
-    * [CAP theorem](#cap-theorem)
-        * [CP - consistency and partition tolerance](#cp---consistency-and-partition-tolerance)
-        * [AP - availability and partition tolerance](#ap---availability-and-partition-tolerance)
-* [Consistency patterns](#consistency-patterns)
-    * [Weak consistency](#weak-consistency)
-    * [Eventual consistency](#eventual-consistency)
-    * [Strong consistency](#strong-consistency)
-* [Availability patterns](#availability-patterns)
+* [Faollik(yoki tayyorlik, ing. availability) vs Izchillik(ing. consistency)](#availability-vs-consistency)
+    * [CAP teoremasi(ing. cap-theorem)](#cap-theorem)
+        * [CP - consistency - izchillik, and - va, partition tolerance](#cp---consistency-and-partition-tolerance)
+        * [AP - availability -faollik, and - va, partition tolerance](#ap---availability-and-partition-tolerance)
+* [Izchillik qoliplari(ing. consistency patterns)](#consistency-patterns)
+    * [Nozik izchillik(ing. weak consistency](#weak-consistency)
+    * [Uzul-kesil izchillik(ing. eventual consistency)](#eventual-consistency)
+    * [Qat'iy izchillik(ing. eventual consistency)](#strong-consistency)
+* [Faollik qoliplari(ing. availability patterns)](#availability-patterns)
     * [Fail-over](#fail-over)
-    * [Replication](#replication)
-    * [Availability in numbers](#availability-in-numbers)
-* [Domain name system](#domain-name-system)
-* [Content delivery network](#content-delivery-network)
+    * [Replikatsiya(ing. replication](#replication)
+    * [Faollik sonlarda(ing. availability in numbers)](#availability-in-numbers)
+* [Domen nomlari tizimi(DNS - Domain Name System)](#domain-name-system)
+* [Kontentni yetkazish tarmog'i(ing. CDN - Content delivery network)](#content-delivery-network)
     * [Push CDNs](#push-cdns)
     * [Pull CDNs](#pull-cdns)
-* [Load balancer](#load-balancer)
-    * [Active-passive](#active-passive)
-    * [Active-active](#active-active)
-    * [Layer 4 load balancing](#layer-4-load-balancing)
-    * [Layer 7 load balancing](#layer-7-load-balancing)
-    * [Horizontal scaling](#horizontal-scaling)
-* [Reverse proxy (web server)](#reverse-proxy-web-server)
-    * [Load balancer vs reverse proxy](#load-balancer-vs-reverse-proxy)
-* [Application layer](#application-layer)
-    * [Microservices](#microservices)
-    * [Service discovery](#service-discovery)
-* [Database](#database)
+* [Yuklanishni muvozanatlovchi(ing. load-balancer)](#load-balancer)
+    * [faol-passiv(ing. active-passive)](#active-passive)
+    * [faol-faol(active-active)](#active-active)
+    * [4-qobiqli yuklanishni muvozanatlovchi(ing. layer 4 load balancing)](#layer-4-load-balancing)
+    * [7-qobiqli yuklanishni muvozanatlovchi(ing. layer 7 load balancing)](#layer-7-load-balancing)
+    * [Gorizontal masshtablash(ing. horizontal scaling)](#horizontal-scaling)
+* [Teskari proksi (veb server)(ing. reverse proxy (web server))](#reverse-proxy-web-server)
+    * [Yuklanishni muvozanatlovchi teskari proksi solishtirilganda(ing. load balancer vs reverse proxy)](#load-balancer-vs-reverse-proxy)
+* [Dastur qobig'i(ing. application layer)](#application-layer)
+    * [Mikroservislar(ing. microservices)](#microservices)
+    * [Servisni kashf qilish(ing. service discovery)](#service-discovery)
+* [Ma'lumotlar bazasi(database)](#database)
     * [Relational database management system (RDBMS)](#relational-database-management-system-rdbms)
         * [Master-slave replication](#master-slave-replication)
         * [Master-master replication](#master-master-replication)
-        * [Federation](#federation)
+        * [Federatsiya(ing. federation)](#federation)
         * [Sharding](#sharding)
         * [Denormalization](#denormalization)
         * [SQL tuning](#sql-tuning)
@@ -144,30 +145,30 @@ Review the [Contributing Guidelines](CONTRIBUTING.md).
         * [Wide column store](#wide-column-store)
         * [Graph Database](#graph-database)
     * [SQL or NoSQL](#sql-or-nosql)
-* [Cache](#cache)
-    * [Client caching](#client-caching)
-    * [CDN caching](#cdn-caching)
-    * [Web server caching](#web-server-caching)
-    * [Database caching](#database-caching)
-    * [Application caching](#application-caching)
+* [Kesh(cache)](#cache)
+    * [Klient tomonida keshlanish](#client-caching)
+    * [KYT(CDN)da keshlanish](#cdn-caching)
+    * [Veb serverda keshlanish](#web-server-caching)
+    * [Ma'lumotlar bazasida keshlanish](#database-caching)
+    * [Dasturda keshlanishi](#application-caching)
     * [Caching at the database query level](#caching-at-the-database-query-level)
-    * [Caching at the object level](#caching-at-the-object-level)
-    * [When to update the cache](#when-to-update-the-cache)
-        * [Cache-aside](#cache-aside)
+    * [Obyekt darajasida keshlash](#caching-at-the-object-level)
+    * [Keshni qachon yangilash kerak?](#when-to-update-the-cache)
+        * [Yon tomonlama keshlash(cache-aside)](#cache-aside)
         * [Write-through](#write-through)
         * [Write-behind (write-back)](#write-behind-write-back)
         * [Refresh-ahead](#refresh-ahead)
-* [Asynchronism](#asynchronism)
-    * [Message queues](#message-queues)
-    * [Task queues](#task-queues)
-    * [Back pressure](#back-pressure)
-* [Communication](#communication)
-    * [Transmission control protocol (TCP)](#transmission-control-protocol-tcp)
+* [Asinxronlik(asynchronism)](#asynchronism)
+    * [Xabar zanjirlari(ing. message queues)](#message-queues)
+    * [Vazifa zanjirlari(ing. task queues)](#task-queues)
+    * [Orqa bosim(ing. back pressure)](#back-pressure)
+* [Kommunikatsiya(ing. communication)](#communication)
+    * [Uzatuvni boshqarish protokoli(ing. TCP - transmission control protocol)](#transmission-control-protocol-tcp)
     * [User datagram protocol (UDP)](#user-datagram-protocol-udp)
     * [Remote procedure call (RPC)](#remote-procedure-call-rpc)
     * [Representational state transfer (REST)](#representational-state-transfer-rest)
-* [Security](#security)
-* [Appendix](#appendix)
+* [Havfsizlik](#security)
+* [Ilova(ing. appendix)](#appendix)
     * [Powers of two table](#powers-of-two-table)
     * [Latency numbers every programmer should know](#latency-numbers-every-programmer-should-know)
     * [Additional system design interview questions](#additional-system-design-interview-questions)
@@ -179,7 +180,7 @@ Review the [Contributing Guidelines](CONTRIBUTING.md).
 * [Contact info](#contact-info)
 * [License](#license)
 
-## Study guide
+## O'quv qo'llanmasi
 
 > Suggested topics to review based on your interview timeline (short, medium, long).
 
